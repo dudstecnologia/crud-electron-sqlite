@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CRUD Electron e MySQL</title>
+
+    <link rel="stylesheet" href="./styles/css/photon.min.css">
+  </head>
+  <body>
+    <div class="window">
+        <div class="pane-group">
+          <div class="pane-sm sidebar">
+            <nav class="nav-group">
+              <a class="nav-group-item active" href="javascript:exibeLista()" id="link-lista">
+                <span class="icon icon-users"></span>
+                Contatos
+              </a>
+              <a class="nav-group-item" href="javascript:exibeForm()" id="link-form">
+                <span class="icon icon-user-add"></span>
+                Novo
+              </a>
+            </nav>
+          </div>
+          <div class="pane" id="painel-lista">
+            <div class="padded-more">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <div class="media-body">
+                  <strong>Contato 1</strong>
+                  <p>092993745675</p>
+                </div>
+              </li>
+              <li class="list-group-item">
+                <div class="media-body">
+                  <strong>Contato 2</strong>
+                  <p>011995456786</p>
+                </div>
+              </li>
+            </ul>
+            </div>
+          </div>
+
+          <div class="pane" id="painel-form">
+            <div class="padded-more">
+            <form id="form-principal">
+              <div class="form-group">
+                <label>Nome</label>
+                <input type="text" class="form-control" name="nome">
+              </div>
+              <div class="form-group">
+                <label>Telefone</label>
+                <input type="text" class="form-control" name="telefone">
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn btn-form btn-primary">Salvar</button>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="./renderer.js"></script>
+    <script src="./src/funcoes.js"></script>
+  </body>
+</html>
