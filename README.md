@@ -11,3 +11,5 @@
 <p>https://www.techiediaries.com/electron-data-persistence/</p>
 
 <p>https://electronjs.org/docs/tutorial/using-native-node-modules</p>
+
+<p>https://stackabuse.com/a-sqlite-tutorial-with-node-js/</p>
