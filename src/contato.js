@@ -4,9 +4,9 @@ class Contato {
       this.dao = dao
     }
 
-    create(data) {
+    create(nome, telefone) {
       return this.dao.run(
-        'INSERT INTO contatos (nome, telefone) VALUES (?, ?)', [data]
+        'INSERT INTO contatos (nome, telefone) VALUES (?, ?)', [nome, telefone]
       )
     }
 

@@ -1,18 +1,23 @@
 const {app, BrowserWindow} = require('electron')
 const path = require('path')
+/*
 const sqlite3 = require('sqlite3');
 const Promise = require('bluebird')
 
 const DAO = require('./src/dao')
 const Contato = require('./src/contato')
-
+*/
 let mainWindow
 
 function createWindow () {
 
   mainWindow = new BrowserWindow({
     width: 900,
-    height: 650
+    height: 650,
+    webPreferences: {
+      // https://electronjs.org/docs/faq#i-can-not-use-jqueryrequirejsmeteorangularjs-in-electron
+      nodeIntegration: true
+    }
   })
 
   mainWindow.loadFile('index.html')
@@ -25,7 +30,7 @@ function createWindow () {
   })
 
   // ##########################################
-
+  /*
   const dao = new DAO('./database/db.sqlite')
   const contato = new Contato(dao)
 
@@ -42,7 +47,7 @@ function createWindow () {
     .catch((err) => {
       console.log('Ocorreu um erro, ' + err)
     })
-  
+  */
   /*
   // Conexao através da Classe
   const dao = new DAO('./database/db.sqlite');
