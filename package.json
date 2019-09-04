@@ -17,6 +17,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "devDependencies": {
-    "electron": "^6.0.7"
+    "electron": "^6.0.7",
+    "electron-rebuild": "^1.8.6"
+  },
+  "dependencies": {
+    "sqlite3": "^4.1.0"
   }
 }
